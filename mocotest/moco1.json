@@ -1,0 +1,27 @@
+[
+  {
+    "description": "第一个demo测试",
+    "request": {
+      "uri": "/test"
+    },
+    "response": {
+      "text": "返回第一个demo的结果"
+    }
+  },
+  {
+    "description": "第一个重定向测试",
+    "request": {
+      "uri": "/test1"
+    },
+    "redirectTo": "/test2"
+  },
+  {
+    "description": "第一个demo测试",
+    "request": {
+      "uri": "/test2"
+    },
+    "response": {
+      "text": "重定向测试结果成功"
+    }
+  }
+]

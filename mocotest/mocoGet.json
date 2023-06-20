@@ -1,0 +1,41 @@
+[
+  {
+    "description": "第一个get无参接口测试",
+    "request": {
+      "uri": "/testget",
+      "method": "get"
+    },
+    "response": {
+      "text": "返回第一个get无参接口的结果"
+    }
+  },
+  {
+    "description": "第一个get参数接口测试",
+    "request": {
+      "uri": "/testgetparam",
+      "method": "get",
+      "queries": {
+        "name": "xiaokele",
+        "age": "3"
+      }
+    },
+    "response": {
+      "text": "返回第一个get参数接口的结果：小可乐棒棒哒"
+    }
+  },
+  {
+    "description": "第一个带cookies测试",
+    "request": {
+      "uri": "/testgetcookies",
+      "method": "get",
+      "cookies": {
+        "login":"true"
+      }
+
+    },
+  "response":{
+  "text": "返回第一个get带cookies接口的结果"
+  }
+  }
+
+]

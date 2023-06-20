@@ -1,0 +1,67 @@
+[
+  {
+    "description": "第一个post带heard接口测试",
+    "request": {
+      "uri": "/testpostheard",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "json": {
+        "name": "xiaokele",
+        "age": "3"
+      }
+    },
+    "response": {
+      "json": {
+        "xiaokele": "success",
+        "status": "200"
+      }
+    }
+  },
+  {
+    "description": "第一个post无参接口测试",
+    "request": {
+      "uri": "/testpost",
+      "method": "post"
+    },
+    "response": {
+      "text": "返回第一个post无参接口的结果"
+    }
+  },
+  {
+    "description": "第一个post参数接口测试",
+    "request": {
+      "uri": "/testpostparam",
+      "method": "post",
+      "forms": {
+        "name": "xiaokele",
+        "age": "3"
+      }
+    },
+    "response": {
+      "text": "返回第一个post参数接口的结果：小可乐棒棒哒"
+    }
+  },
+  {
+    "description": "第一个post带cookies参数接口测试",
+    "request": {
+      "uri": "/testpostcookies",
+      "method": "post",
+      "cookies":{
+        "login": "true"
+},
+      "json": {
+        "name": "xiaokele",
+        "age": "3"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "xiaokele": "success"
+      }
+    }
+  }
+
+]
