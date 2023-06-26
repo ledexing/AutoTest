@@ -1,5 +1,31 @@
 [
   {
+    "description": "这是一个会返回cookies的接口",
+    "request": {
+      "uri": "/getcookies",
+      "method": "get"
+    },
+    "response": {
+      "cookies":{
+        "login": "true"
+      },
+      "text": "获取cookies成功了"
+  }
+  },
+  {
+    "description": "这是一个入参需要cookies的接口",
+    "request": {
+      "uri": "/test/setcookies",
+      "method": "get",
+      "cookies":{
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "带入cookies访问成功了"
+    }
+  },
+  {
     "description": "第一个get无参接口测试",
     "request": {
       "uri": "/testget",
@@ -36,6 +62,26 @@
   "response":{
   "text": "返回第一个get带cookies接口的结果"
   }
+  },
+  {
+    "description": "第一个post带cookies参数接口测试",
+    "request": {
+      "uri": "/test/postcookies",
+      "method": "post",
+      "cookies":{
+        "login": "true"
+      },
+      "json": {
+        "name": "xiaokele",
+        "age": "3"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "xiaokele": "success"
+      }
+    }
   }
 
 ]

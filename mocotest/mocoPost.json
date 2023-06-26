@@ -46,7 +46,7 @@
   {
     "description": "第一个post带cookies参数接口测试",
     "request": {
-      "uri": "/testpostcookies",
+      "uri": "/test/postcookies",
       "method": "post",
       "cookies":{
         "login": "true"
