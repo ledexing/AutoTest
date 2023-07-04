@@ -1,0 +1,30 @@
+server:
+  port: 8899
+logging:
+  path: logs
+  file: mylog.log
+spring:
+  application:
+    name: myTestInterface
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xiaokele
+    username: root
+    password: root123
+    hikari:
+      connection-test-query: SELECT 1 FROM DUAL
+      connection-timeout: 600000
+      maximum-pool-size: 500
+      max-lifetime: 1800000
+      minimum-idle: 20
+      validation-timeout: 3000
+      idle-timeout: 60000
+      connection-init-sql: SET NAMES utf8mb4
+mybatis:
+  type-aliases-package: com.course.model
+  mapper-locations:
+    - mapper/*
+
+
+
+

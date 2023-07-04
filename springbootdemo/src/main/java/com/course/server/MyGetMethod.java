@@ -6,6 +6,8 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
+
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -21,7 +23,7 @@ public class MyGetMethod {
     public String getCookies(HttpServletResponse response){
         Cookie cookie=new Cookie("login","truele");
         response.addCookie(cookie);
-        return "这是我的第一个springboot的get接口";
+        return "这是我的第一个接口";
     }
     /*
     开发一个需要验证cookies的get接口

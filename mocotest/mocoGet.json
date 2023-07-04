@@ -6,6 +6,7 @@
       "method": "get"
     },
     "response": {
+      "headers":{"Content-Type":"text/html;charset=gbk"},
       "cookies":{
         "login": "true"
       },
